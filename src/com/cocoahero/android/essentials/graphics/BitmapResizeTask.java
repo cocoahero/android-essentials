@@ -6,6 +6,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 
+/**
+ * An {@link AsyncTask} subclass that decodes and resizes a {@link Bitmap} to
+ * desired dimensions.
+ */
 public class BitmapResizeTask extends AsyncTask<Void, Void, Bitmap> {
 
     // ------------------------------------------------------------------------
