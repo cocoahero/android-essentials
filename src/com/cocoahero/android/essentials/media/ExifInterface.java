@@ -40,11 +40,11 @@ public class ExifInterface extends android.media.ExifInterface {
         if (location.hasAltitude()) {
             this.setAltitude(location.getAltitude());
         }
-        
+
         Date date = new Date(location.getTime());
 
-        String dateStamp = new SimpleDateFormat("y:M:d").format(date);
-        String timeStamp = new SimpleDateFormat("H:m:s").format(date);
+        String dateStamp = new SimpleDateFormat("yyyy:MM:dd").format(date);
+        String timeStamp = new SimpleDateFormat("HH:mm:ss.SS").format(date);
 
         this.setAttribute(TAG_GPS_DATESTAMP, dateStamp);
         this.setAttribute(TAG_GPS_TIMESTAMP, timeStamp);
