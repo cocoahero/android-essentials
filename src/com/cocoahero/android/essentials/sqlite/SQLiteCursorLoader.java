@@ -118,11 +118,11 @@ public class SQLiteCursorLoader extends AsyncTaskLoader<Cursor> {
     public String getLimit() {
         return this.mLimit;
     }
-    
+
     public void setDistinct(boolean distinct) {
         this.mDistinct = distinct;
     }
-    
+
     public boolean getDistinct() {
         return this.mDistinct;
     }
@@ -134,7 +134,7 @@ public class SQLiteCursorLoader extends AsyncTaskLoader<Cursor> {
         }
         return null;
     }
-    
+
     // ------------------------------------------------------------------------
     // Private Methods
     // ------------------------------------------------------------------------
